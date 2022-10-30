@@ -1,90 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Registration Form With Validation</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js" defer></script>
+    <title>Registration-Form</title>
   </head>
   <body>
-    <h1 align="center" class="head">Form Validation</h1>
-    <div class="box">
-      <form class="form" id="form">
-        <h2 align="center">Registration Form WD101</h2>
-
-        <table class="tableForm" cellspacing="25px">
-          <tr>
-            <td><label for="name">Name :</label></td>
-            <td>
-              <input
-                class="input"
-                type="text"
-                name="name"
-                id="name"
-                placeholder="Full Name"
-                required
-              />
-            </td>
-          </tr>
-          <tr>
-            <td><label for="email">E-mail :</label></td>
-            <td>
-              <input
-                class="input"
-                type="email"
-                name="email"
-                id="email"
-                placeholder="Email"
-                required
-              />
-            </td>
-          </tr>
-          <tr>
-            <td><label for="name">Password :</label></td>
-            <td>
-              <input
-                class="input"
-                type="password"
-                name="password"
-                id="password"
-                placeholder="Password"
-                required
-              />
-            </td>
-          </tr>
-          <tr>
-            <td><label for="dob">Date Of Birth :</label></td>
-            <td>
-              <input
-                style="width: 220px"
-                class="input"
-                type="date"
-                name="dob"
-                id="dob"
-                required
-              />
-            </td>
-          </tr>
-          <tr>
-            <td colspan="2">
-              <input type="checkbox" name="agree" id="agree" />
-              <label for="checkbox">Accept Terms & Conditions</label>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <button class="btn" type="submit">Submit</button>
-            </td>
-          </tr>
-        </table>
-      </form>
+    
+    <div class="main">
+      <div class="form">
+        <h1 style="text-align: center; font-family: Old English Text MT" >Register Form</h1>
+        <form id="user-form">
+          <label for="name">Name : </label>
+          <input required type="text" name="name" id="name" />
+          <br />
+          <label for="email">Email : </label>
+          <input required type="email" name="email" id="email" />
+          <br />
+          <label for="password">Password : </label>
+          <input required type="password" name="password" id="password" /><br />
+          <label for="dob">DOB : </label>
+          <input type="date" name="dob" id="dob" required />
+          <br />
+          <input
+            style="width: 40px"
+            type="checkbox"
+            name="acceptTerms"
+            id="acceptTerms"
+          />
+          <label for="acceptTerms">Accept terms & Conditions</label>
+          <br /><br />
+          <input
+            style="background-color: rgb(146, 1, 249); color: white"
+            type="submit"
+            value="Submit"
+          />
+        </form>
+      </div>
     </div>
-
-    <div class="entry">
-      <h2 class="subHead">Entries</h2>
-      <div id="tableDiv"></div>
-    </div>
+    <div id="entrytbale"></div>
+    <script src="formindex.js"></script>
   </body>
 </html>
